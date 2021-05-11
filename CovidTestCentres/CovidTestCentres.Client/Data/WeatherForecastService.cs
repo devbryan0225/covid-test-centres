@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CovidTestCentres.Data
+namespace CovidTestCentres.Client.Data
 {
     public class WeatherForecastService
     {

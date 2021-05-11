@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:29914",
-      "sslPort": 44344
+      "applicationUrl": "http://localhost:27778",
+      "sslPort": 44341
     }
   },
   "profiles": {
@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "CovidTestCentres": {
+    "CovidTestCentres.Client": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

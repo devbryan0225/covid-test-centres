@@ -1,6 +1,6 @@
 using System;
 
-namespace CovidTestCentres.Data
+namespace CovidTestCentres.Client.Data
 {
     public class WeatherForecast
     {

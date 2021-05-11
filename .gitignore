@@ -6,3 +6,6 @@
 /CovidTestCentres/CovidTestCentres/obj
 /CovidTestCentres/CovidTestCentres/bin/Debug/net5.0
 /CovidTestCentres/.vs/CovidTestCentres/config
+/CovidTestCentres/.vs/CovidTestCentres/DesignTimeBuild
+/CovidTestCentres/CovidTestCentres.Client/obj
+/CovidTestCentres/CovidTestCentres.Client/bin/Debug/net5.0
