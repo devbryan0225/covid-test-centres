@@ -9,3 +9,4 @@
 /CovidTestCentres/.vs/CovidTestCentres/DesignTimeBuild
 /CovidTestCentres/CovidTestCentres.Client/obj
 /CovidTestCentres/CovidTestCentres.Client/bin/Debug/net5.0
+/CovidTestCentres/CovidTestCentres.Client/node_modules

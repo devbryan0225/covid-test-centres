@@ -1,0 +1,22 @@
+{
+  "name": "covidtestcentres.client",
+  "version": "1.0.0",
+  "description": "lists of covid test centres.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildcss": "postcss wwwroot/css/app.css -o wwwroot/css/app.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devbryan0225/covid-test-centres.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.15",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
+  }
+}
