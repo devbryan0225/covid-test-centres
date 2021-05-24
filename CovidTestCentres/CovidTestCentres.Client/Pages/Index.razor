@@ -1,7 +1,51 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
+<h1 class="py-4 text-lg flex flex-1 justify-center tracking-wider uppercase font-bold text-gray-800">
+    Covid Test Centers
+</h1>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+@* dropdown *@
+<div>
+    <div>
+        <button id="menu-button" type="button" class="inline-flex justify-center items-center w-full border border-gray-300 px-4 py-2 text-sm rounded-md shadow-sm">
+            Locations
+            <span class="oi oi-chevron-bottom text-gray-700 ml-2" title="icon name" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+
+<div class="my-2">
+    @* header *@
+    <div class="uppercase bg-gray-50 text-gray-500 border-gray-200 tracking-wide border px-4 py-2 rounded-tl-md rounded-tr-md">
+        Name
+    </div>
+    @* grid row *@
+    <div class="grid grid-cols-3 grid-rows-2 border-gray-200 border border-t-0 px-4 p-2 text-gray-700 bg-white">
+        <div class="col-span-2">
+            KLINIK ICON
+        </div>
+        <div class="row-start-2 col-span-2 truncate text-gray-500 capitalize">
+            E-05-05A, THE ICON, JALAN U THANT 1/68F, Kuala Lumpur, 50400 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur
+        </div>
+        <div class="hidden">+60328566105</div>
+        <div class="col-start-3 row-span-2 flex flex-1 items-center justify-center cursor-pointer">
+            <span class="oi oi-map-marker text-red-600" title="icon name" aria-hidden="true"></span>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    List<Clinic> clinics;
+
+    protected override void OnInitialized()
+    {
+        clinics = new List<Clinic>();
+        clinics.Add(new Clinic {
+            Name = "KLINIK ICON", 
+            ContactNumber = "+60328566105",
+            Address = "E-05-05A, THE ICON, JALAN U THANT 1/68F, Kuala Lumpur, 50400 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur"
+        });
+    }
+}
