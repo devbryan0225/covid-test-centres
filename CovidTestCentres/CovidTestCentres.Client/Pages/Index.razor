@@ -1,35 +1,55 @@
 ﻿@page "/"
 
 
-<h1 class="py-4 text-lg flex flex-1 font-bold text-blue-800">
+<h1 class="py-4 text-lg md:text-4xl md:my-4 flex flex-1 font-bold 
+text-blue-700">
     COVID-19 Test Centers
 </h1>
 
 @* dropdown *@
 <div>
-    <div class="mb-4">
-        <button id="menu-button" type="button" class="inline-flex items-center justify-between tracking-wide w-full border bg-gray-100 text-gray-400 px-4 py-2 text-sm rounded-md shadow-sm">
+    <div class="mb-4 md:mb-10">
+        <button id="menu-button" type="button" 
+        class="inline-flex items-center justify-between tracking-wide 
+        w-full border bg-gray-100 text-gray-400 px-4 py-2 text-sm 
+        rounded-md shadow-sm">
             Locations
-            <span class="oi oi-chevron-bottom text-gray-700 ml-2" title="icon name" aria-hidden="true"></span>
+            <span class="oi oi-chevron-bottom text-gray-700 ml-2" 
+            title="icon name" aria-hidden="true"></span>
         </button>
     </div>
 </div>
 
 <div class="my-2">
     @* header *@
-    <div class="hidden uppercase bg-gray-50 text-gray-500 border-gray-200 tracking-wide border px-4 py-2 rounded-tl-md rounded-tr-md">
-        Name
+    <div class="hidden md:grid md:grid-cols-6 md:mb-4 bg-gray-50 
+    text-gray-500 border-gray-200 tracking-wide border px-4 py-2 
+    rounded-tl-md rounded-tr-md">
+        <label class="font-bold col-start-1">Name</label>
+        <label class="font-bold col-start-2">Address</label>
+        <label class="font-bold col-start-4">District</label>
+        <label class="font-bold col-start-5">Phone</label>
     </div>
     @* grid row *@
-    <div class="grid grid-cols-3 grid-rows-2 border-gray-200 border-b p-4 text-gray-700 bg-white">
-        <div class="col-span-2">
+    <div class="grid grid-cols-3 grid-rows-2 md:grid-cols-6 
+    md:grid-rows-1 border-gray-200 border-b md:border md:rounded-lg 
+    p-4 text-gray-700 bg-white items-center">
+        <div class="col-span-2 md:col-start-1 md:col-span-1">
             KLINIK ICON
         </div>
-        <div class="row-start-2 col-span-2 truncate text-gray-500 capitalize">
-            E-05-05A, THE ICON, JALAN U THANT 1/68F, Kuala Lumpur, 50400 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur
+        <div class="row-start-2 col-span-2 md:row-start-1 md:col-start-2 
+        md:col-span-2 md:mr-4 truncate text-gray-500 capitalize">
+            E-05-05A, THE ICON, JALAN U THANT 1/68F, Kuala Lumpur, 
+            50400 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur
         </div>
-        <div class="hidden">+60328566105</div>
-        <div class="col-start-3 row-span-2 flex flex-1 items-center justify-center cursor-pointer">
+        <div class="hidden md:block md:col-start-4 text-gray-500">
+            District 1
+            </div>
+        <div class="hidden md:block md:col-start-5 text-gray-500">
+            +60328566105
+        </div>
+        <div class="col-start-3 row-span-2 md:col-start-6 md:row-span-1 
+        flex flex-1 items-center justify-center cursor-pointer">
             <label class="border border-gray-200 px-4 py-2 rounded-3xl">Go</label>
             @* <span class="oi oi-map-marker text-red-600" title="icon name" aria-hidden="true"></span> *@
         </div>
