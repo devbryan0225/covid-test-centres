@@ -9,7 +9,8 @@ module.exports = {
   },
   variants: {
     extend: {
-      tableLayout: ['hover', 'focus']
+      backgroundColor: ['active'],
+      textColor: ['active']
     },
   },
   plugins: [],
