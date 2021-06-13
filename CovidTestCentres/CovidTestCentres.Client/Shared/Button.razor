@@ -1,0 +1,13 @@
+<div class="flex xl:grid xl:grid-cols-12">
+    <button class="flex-1 focus:outline-none cursor-default 
+md:cursor-pointer hover:bg-red-500 rounded-lg hover:text-white 
+bg-white border-red-600 text-red-600 active:bg-red-700 
+active:text-white border p-2 xl:col-span-2">
+        @Text
+    </button>
+</div>
+
+@code {
+    [Parameter]
+    public string Text {get; set;}
+}

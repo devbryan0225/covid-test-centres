@@ -1,0 +1,44 @@
+<div class="relative md:mb-4">
+    <a href="#" class="absolute w-full h-full md:border 
+        md:rounded-lg xl:hidden">
+    </a>
+    <div class="grid grid-cols-3 grid-rows-2 md:grid-cols-6 
+        md:grid-rows-1 border-gray-200 border-b md:border 
+        md:rounded-lg p-4 text-gray-700 bg-white items-center">
+        <a href="#tomaps" class="col-span-2 md:col-start-1 
+            md:col-span-1 xl:py-3 hover:underline">
+            @Item.Name
+        </a>
+        <div class="row-start-2 col-span-2 md:row-start-1 
+            md:col-start-2 md:col-span-2 xl:col-start-4 md:mr-4 truncate 
+            xl:whitespace-normal text-gray-500 capitalize">
+            @Item.Address
+        </div>
+        <div class="hidden md:block md:col-start-4 xl:col-start-2 
+            text-gray-500">
+            @Item.District
+        </div>
+        <div class="hidden md:block md:col-start-5 xl:col-start-3 
+            text-gray-500">
+            <label>
+                @Item.ContactNumber
+                <a href="#+60328566105" class="hidden xl:inline-flex">
+                    <span class="oi oi-file text-gray-400 ml-2 " title="icon name" aria-hidden="true"></span>
+                </a>
+            </label>
+        </div>
+        <div class="col-start-3 row-span-2 md:col-start-6 md:row-span-1 
+            flex flex-1 items-center justify-center cursor-pointer">
+            <label class="border border-gray-200 px-4 py-2 rounded-3xl">
+                Go
+            </label>
+        </div>
+    </div>
+</div>
+
+@* parameters *@
+
+@code {
+    [Parameter]
+    public Clinic Item { get; set; }
+}

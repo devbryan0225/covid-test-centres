@@ -4,6 +4,7 @@ namespace CovidTestCentres.Client.Models
     {
         public string Name { get; set; }
         public string Address { get; set; }
+        public string District { get; set; }
         public string ContactNumber { get; set; }
         public string Link { get; set; }
     }
