@@ -20,7 +20,7 @@ jobs:
     
     # sets up node.js environment
     - name: Setup Node.js
-      uses: actions/setup-node@2.1.*
+      uses: actions/setup-node@2.1.5
       
     # publishes Blazor project to the release folder
     - name: Publish .NET Core Project
