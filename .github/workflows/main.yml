@@ -21,6 +21,9 @@ jobs:
     # sets up node.js environment
     - name: Setup Node.js
       uses: actions/setup-node@v2.1.5
+      run: npm install postcss
+      run: npm install postcss-cli
+      run: npm install tailwindcss
       
     # publishes Blazor project to the release folder
     - name: Publish .NET Core Project
