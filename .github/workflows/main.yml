@@ -22,9 +22,11 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2.1.5
     
-    - name: Install node libraries
+    - name: Install postcss
       run: npm install postcss
+    - name: Install postcss-cli
       run: npm install postcss-cli
+    - name: Install tailwindcss
       run: npm install tailwindcss
       
     # publishes Blazor project to the release folder
