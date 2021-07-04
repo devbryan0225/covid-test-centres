@@ -18,9 +18,7 @@ jobs:
       with:
         dotnet-version: '5.0.x'
     
-    # sets up node.js environment
-    - name: Setup Node.js
-      uses: actions/setup-node@v2.1.5
+
     
     - name: Install node libraries
       working-directory: CovidTestCentres/CovidTestCentres.Client
