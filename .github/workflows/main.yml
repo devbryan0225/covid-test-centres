@@ -23,7 +23,8 @@ jobs:
       uses: actions/setup-node@v2.1.5
     
     - name: Install node libraries
-      run: npm install tailwindcss postcss autoprefixer postcss-cli
+      working-directory: CovidTestCentres/CovidTestCentres.Client
+      run: npm install tailwindcss postcss autoprefixer postcss-cli      
       
     # publishes Blazor project to the release folder
     - name: Publish .NET Core Project
